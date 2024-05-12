@@ -1,0 +1,19 @@
+::ng-deep .carousel-control-prev,
+::ng-deep .carousel-control-next {
+    width: 5%; /* Ajuste a largura das setas */
+    background-color: black;
+    opacity: 0.13;
+
+}
+
+::ng-deep .carousel-control-prev {
+    left: 0; /* Move a seta esquerda para a borda esquerda */
+    border-top-left-radius: 0.5rem; /* 8px */
+border-bottom-left-radius: 0.5rem; /* 8px */
+}
+
+::ng-deep .carousel-control-next {
+    right: 0; /* Move a seta direita para a borda direita */
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}

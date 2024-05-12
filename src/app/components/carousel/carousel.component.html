@@ -1,0 +1,26 @@
+<div class="">
+  <ng-container *ngIf="articles && articles.length > 0" class="">
+    <ngb-carousel>
+      <ng-template class="" ngbSlide *ngFor="let article of articles">
+        <div class="flex items-center">
+          <div class="picsum-img-wrapper">
+            <a [href]="article.url">
+            <img
+              class="flex w-[700px] rounded-l-2xl h-[450px]"
+              [src]="article.urlToImage"
+              [alt]="article.title"
+            />
+          </a>
+          </div>
+          <div class="ml-4 flex-1">
+            <h1 class="font-bold">{{ article.title }}</h1>
+            <div class="flex flex-col mt-5">
+              <p>{{ article.description }}</p>
+              <p class="text-gray-500 mt-1 text-sm">{{ article.author }}</p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </ng-container>
+</div>
